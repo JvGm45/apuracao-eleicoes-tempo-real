@@ -1,6 +1,5 @@
-import axios from "axios";
-import React, { useState } from "react";
-import style from './app.module.scss'
+import style from './app.module.scss';
+
 import CandidatosSP from "../components/candidatos/governadorSP"
 import Presidentes from "../components/candidatos/presidentesBR";
 import GovernadorMS from "../components/candidatos/governadorMS";
@@ -12,12 +11,22 @@ import GovernadorPE from "../components/candidatos/candidatosPE";
 import GovernadorBA from "../components/candidatos/candidatosBA";
 import GovernadorSC from "../components/candidatos/candidatosSC";
 import GovernadorSE from "../components/candidatos/candidatosSE";
-
+import BotaoFixo from "../components/botaoDiscord";
+import Footer from "../components/footer";
+import Header from "../components/header";
 
 
 function App() {
+    document.title = 'Eleições 2022'
+    
     return (
         <>
+
+        <Header />
+
+        <section className={style.root}> 
+        <BotaoFixo />
+
         <Presidentes />
         <CandidatosSP />
         <GovernadorMS />
@@ -30,9 +39,10 @@ function App() {
         <GovernadorSC />
         <GovernadorSE />
 
-
-
+        <Footer />
+        </section>
             </>
+
     )
     }
 

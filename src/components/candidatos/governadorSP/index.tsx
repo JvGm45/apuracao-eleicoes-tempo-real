@@ -53,6 +53,7 @@ function CandidatosSP() {
       
         return (
             <section>
+            <div className={style.divisaoTotal}>
             <div className={style.titulosGovernadores}>
                 <h2 className={style.inicioDaPagina}>Candidatos a governador de São Paulo.</h2>
                 <p className={style.inicioDaPagina}>Urnas apuradas: {postSP}%</p>
@@ -60,18 +61,19 @@ function CandidatosSP() {
 
             <div className={style.governadoresSP}>
 
-            <div>
+            <div className={style.divisaoCandidatos}>
             <img src={tarcisio} className={style.imagemTamanhoErrado}></img>
             <p className={style.informacoes}>O candidato {post1SP}</p>
-            <p className={style.informacoes}>Tem {QvSP}% e {Qv3SP} votos</p>
+            <p className={style.informacoes}>Tem {QvSP}% com {Qv3SP} votos</p>
             </div>
             
-            <div>
+            <div className={style.divisaoCandidatos}>
             <img src={poste} className={style.imagemTamanhoErrado}></img>
             <p className={style.informacoes}>O candidato {post2SP}</p>
-            <p className={style.informacoes}>Tem {Qv2SP}% e {Qv4SP} votos</p>
+            <p className={style.informacoes}>Tem {Qv2SP}% com {Qv4SP} votos</p>
             </div>
 
+            </div>
             </div>
     </section>
         )

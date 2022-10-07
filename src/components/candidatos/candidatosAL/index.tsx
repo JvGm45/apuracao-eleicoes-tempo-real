@@ -2,8 +2,8 @@ import axios from "axios";
 import React from "react";
 import style from "../../../pages/app.module.scss"
 
-import manato from "../../../imagens/goves/manato.jpg"
-import casagrande from "../../../imagens/goves/casagrande.jpg"
+import dantas from "../../../imagens/goval/dantas.jpg"
+import cunha from "../../../imagens/goval/licensed-image.jpg"
 
 function GovernadorAL() {
 
@@ -52,25 +52,27 @@ function GovernadorAL() {
       
         return (
             <section>
+                            <div className={style.divisaoTotal}>
             <div className={style.titulosGovernadores}>
                 <h2 className={style.inicioDaPagina}>Candidatos a governador de Alagoas.</h2>
                 <p className={style.inicioDaPagina}>Urnas apuradas: {post}%</p>
             </div>
 
-            <div className={style.governadoresES}>
+            <div className={style.governadoresSP}>
 
-            <div>
-            <img src={casagrande} className={style.imagemTamanhoErrado}></img>
+            <div className={style.divisaoCandidatos}>
+            <img src={dantas} className={style.imagemTamanhoErrado}></img>
             <p className={style.informacoes}>O candidato {post1}</p>
             <p className={style.informacoes}>Tem {Qv}% e {Qv3} votos</p>
             </div>
             
-            <div>
-            <img src={manato} className={style.imagemTamanhoErrado}></img>
+            <div className={style.divisaoCandidatos}>
+            <img src={cunha} className={style.imagemTamanhoErrado}></img>
             <p className={style.informacoes}>O candidato {post2}</p>
             <p className={style.informacoes}>Tem {Qv2}% e {Qv4} votos</p>
             </div>
 
+            </div>
             </div>
     </section>
         )

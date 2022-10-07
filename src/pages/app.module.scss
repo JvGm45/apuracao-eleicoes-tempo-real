@@ -1,30 +1,26 @@
 :root {
+    background-color: #3e4ad3;
+}
+
+.root {
     // background-color: #36393f;
     // background: linear-gradient(#36393f, #464545);
-     background: linear-gradient(#3b4698, #226136);
-
+     background: linear-gradient(#3e4ad3, #226136);
 
 }
 
 .inicioDaPagina {
-    color: white;
+    color: #292727;
     font-weight: bold;
     text-align: center;
-
-}
-
-.presidentes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15em;
+    padding: 0.3em;
 }
 
 .informacoes {
     font-weight: bold;
     text-align: center;
-    color: #d7d6d9;
-    font-size: 18px;
+    color: #292727;
+    font-size: 20px;
 }
 
 .imagens {
@@ -35,14 +31,20 @@
 
 .titulosGovernadores {
     margin-top: 5em;
-    font-size: 18px;
+    font-size: 22px;
+}
+
+.espacamento {
+    margin-top: 1em;
+    font-size: 22px;
 }
 
 .governadoresSP {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 15em;
+    gap: 30em;
+    margin-top: 3.5em;
 }
 
 .governadoresES {
@@ -57,6 +59,10 @@
     flex-direction: row;
     justify-content: center;
     gap: 3em;
+}
+
+.divisaoCandidatos {
+    width: 10%;
 }
 
 .govAlinhamento {
@@ -74,22 +80,46 @@
     border-radius: 3em;
 }
 
+.divisaoTotal {
+    max-width: 100em;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #FFFF;
+    border-radius: 4em;
+    box-shadow: 1px 1px 1px 5px #292727;
+}
+
+.backgroundGeral {
+    background-color: #FFFF;
+    border-radius: 3.6em;
+
+    width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 @media only screen and (max-width: 600px) {
 
-    .presidentes {
-        gap: .1em;
-        margin-left: 2.1em;
+    .divisaoCandidatos {
+        width: 100%;
+    }
+
+    .titulosGovernadores {
+        margin-top: 1.8em;
+        font-size: 24px;
     }
 
     .informacoes {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .governadoresSP {
-        gap: 0em;
-        margin-left: 2.1em;
+        gap: 5em;
+        margin-left: 1.3em;
+        margin-top: 2em;
     }
 
     .imagemTamanhoErrado {
@@ -97,11 +127,23 @@
         height: 178px;
     }
 
-    .govMS {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 0em;
-        margin-left: 2.1em;
+    .divisaoTotal {
+        max-width: 50em;
+        margin-left: auto;
+        margin-right: auto;
+    
+        background-color: #FFFF;
+        border-radius: 4em;
+        box-shadow: 1px 1px 1px 5px #292727;
     }
+    
+    .backgroundGeral {
+        background-color: #FFFF;
+        border-radius: 3.6em;
+    
+        width: 10em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }

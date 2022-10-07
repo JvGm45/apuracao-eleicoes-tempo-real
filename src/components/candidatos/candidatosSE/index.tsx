@@ -52,25 +52,27 @@ function GovernadorSE() {
       
         return (
             <section>
+            <div className={style.divisaoTotal}>
             <div className={style.titulosGovernadores}>
                 <h2 className={style.inicioDaPagina}>Candidatos a governador de Sergipe.</h2>
                 <p className={style.inicioDaPagina}>Urnas apuradas: {post}%</p>
             </div>
 
-            <div className={style.governadoresES}>
+            <div className={style.governadoresSP}>
 
-            <div>
+            <div className={style.divisaoCandidatos}>
             <img src={rogerio} className={style.imagemTamanhoErrado}></img>
             <p className={style.informacoes}>O candidato {post1}</p>
             <p className={style.informacoes}>Tem {Qv}% e {Qv3} votos</p>
             </div>
             
-            <div>
+            <div className={style.divisaoCandidatos}>
             <img src={fabio} className={style.imagemTamanhoErrado}></img>
             <p className={style.informacoes}>O candidato {post2}</p>
             <p className={style.informacoes}>Tem {Qv2}% e {Qv4} votos</p>
             </div>
 
+            </div>
             </div>
     </section>
         )

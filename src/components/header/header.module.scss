@@ -1,0 +1,40 @@
+.textoHeader {
+    display: flex;
+    justify-content: center;
+
+    background-color: #3e4ad3;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.divSeparacao {
+    width: 90em;
+    display: flex;
+    justify-content: center;
+    margin-left: 2em;
+    background-color: #3e4ad3;
+}
+
+.titulo {
+    font-size: 32px;
+    background-color: #3e4ad3;
+    
+    font-weight: bold;
+    color: #f7f2f2;
+}
+
+.imagemHeader {
+    margin-left: 30em;
+    width: 6%;
+    border-radius: 5em;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .imagemHeader {
+        margin-left: 1em;
+        width: 27%;
+        border-radius: 10em;
+    }
+    
+}

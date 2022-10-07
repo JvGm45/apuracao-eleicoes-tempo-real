@@ -55,26 +55,28 @@ function Presidentes() {
     console.log(Qv)  
     
         return (
+
             <section>
-            <div className={style.titulosGovernadores}>
+                <div className={style.divisaoTotal}>
+            <div className={style.espacamento}>
                 <h2 className={style.inicioDaPagina}>Candidatos a presidência do Brasil.</h2>
                 <p className={style.inicioDaPagina}>Urnas apuradas: {post}%</p>
             </div>
 
             <div className={style.governadoresSP}>
 
-            <div>
+            <div className={style.divisaoCandidatos}>
             <img src={lula} className={style.imagemTamanhoErrado}></img>
             <p className={style.informacoes}>O candidato {post1}</p>
-            <p className={style.informacoes}>Tem {Qv}% e {Qv3} votos</p>
+            <p className={style.informacoes}>Tem {Qv}% com {Qv3} votos</p>
             </div>
             
-            <div>
+            <div className={style.divisaoCandidatos}>
             <img src={bolsonaro} className={style.imagemTamanhoErrado}></img>
             <p className={style.informacoes}>O candidato {post2}</p>
-            <p className={style.informacoes}>Tem {Qv2}% e {Qv4} votos</p>
+            <p className={style.informacoes}>Tem {Qv2}% com {Qv4} votos</p>
             </div>
-
+            </div>
             </div>
     </section>
         )
