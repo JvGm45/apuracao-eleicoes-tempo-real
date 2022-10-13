@@ -38,8 +38,8 @@ function CandidatosSP() {
             postQvSP(response.data.cand[0].pvap)
             postQv2SP(response.data.cand[1].pvap)
 
-            postQv3SP(response.data.cand[0].vap)
-            postQv4SP(response.data.cand[1].vap)
+            postQv3SP(response.data.cand[0].vap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."))
+            postQv4SP(response.data.cand[1].vap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."))
 
         });
     }
@@ -74,6 +74,7 @@ function CandidatosSP() {
             </div>
 
             </div>
+            <a className={style.saibaMaisCandidatos} href={"/governadorsp"}>Saiba mais sobre os candidatos.</a>
             </div>
     </section>
         )

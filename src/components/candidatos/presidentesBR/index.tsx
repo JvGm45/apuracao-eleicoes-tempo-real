@@ -39,8 +39,8 @@ function Presidentes() {
             postQv(response.data.cand[0].pvap)
             postQv2(response.data.cand[1].pvap)
 
-            postQv3(response.data.cand[0].vap)
-            postQv4(response.data.cand[1].vap)
+            postQv3(response.data.cand[0].vap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."))
+            postQv4(response.data.cand[1].vap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."))
 
             // setInterval(candidatos, 5000);
             console.log('Função executada')
@@ -77,6 +77,7 @@ function Presidentes() {
             <p className={style.informacoes}>Tem {Qv2}% com {Qv4} votos</p>
             </div>
             </div>
+            <a className={style.saibaMaisCandidatos} href={"/presidentes"}>Saiba mais sobre os candidatos.</a>
             </div>
     </section>
         )

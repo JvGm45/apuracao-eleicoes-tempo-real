@@ -19,6 +19,10 @@ class Footer extends React.Component {
                 <a  target='_blank' href={'https://github.com/JvGm45'}><img src={logoGithub} className={style.referenciasPessoais}/></a>
                 </div>
 
+                <div className={style.referencias}>
+                <a className={style.informacoesPage} href='/informacoes'>Clique para saber mais sobre o projeto.</a>
+                </div>
+
             </div>
             </footer>
         )

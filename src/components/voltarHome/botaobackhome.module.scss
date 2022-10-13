@@ -1,0 +1,44 @@
+.colocandoProLado {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home {
+    position:absolute;
+    margin-top: 1.7em;
+    font-weight: bold;
+    color: white;
+
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.imagem {
+    width: 15%;
+
+    border-radius: 1em;
+}
+
+.imagem:hover {
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .home {
+        position:fixed;
+        margin-left: 13em;
+        margin-top: 3em;
+        font-weight: bold;
+        color: white;
+
+    }
+
+    .imagem {
+        width: 50%;
+        background-color: #FFFF;
+    
+        border-radius: 1em;
+    }
+
+}

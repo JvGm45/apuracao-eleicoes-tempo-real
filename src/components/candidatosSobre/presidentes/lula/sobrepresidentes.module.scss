@@ -1,0 +1,83 @@
+.divisaoTotal {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #FFFF;
+    border-radius: 4em;
+    box-shadow: 1px 1px 1px 5px #292727;
+    margin-top: 3em;
+}
+
+.backgroundGeral {
+    background-color: #FFFF;
+    border-radius: 3.6em;
+
+    width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.nome {
+    margin-left: 6em;
+}
+
+.imagemCandidato {
+    display: flex;
+    margin-left: 5em;
+    width: auto;
+    padding: 2em;
+}
+
+.alinhandoTexto {
+    font-size: 20px
+}
+
+.alinhandoConteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .divisaoTotal {
+        max-width: 80%;
+        height: 80em;
+        margin-left: auto;
+        margin-right: auto;
+    
+        background-color: #FFFF;
+        border-radius: 4em;
+        box-shadow: 1px 1px 1px 5px #292727;
+    }
+    
+    .backgroundGeral {
+        background-color: #FFFF;
+        border-radius: 3.6em;
+    
+        width: 10em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imagemCandidato {
+        margin-left: 3.3em;
+        width: 50%;
+    }
+
+    .alinhandoConteudo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width: 641px) {
+
+    
+
+
+}

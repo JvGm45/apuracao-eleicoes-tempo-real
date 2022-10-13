@@ -38,8 +38,8 @@ function GovernadorAM() {
             postQv(response.data.cand[0].pvap)
             postQv2(response.data.cand[1].pvap)
 
-            postQv3(response.data.cand[0].vap)
-            postQv4(response.data.cand[1].vap)
+            postQv3(response.data.cand[0].vap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."))
+            postQv4(response.data.cand[1].vap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."))
 
         });
     }

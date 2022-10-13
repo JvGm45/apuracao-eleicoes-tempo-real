@@ -25,16 +25,27 @@
 
 .imagemHeader {
     margin-left: 30em;
-    width: 6%;
+    width: 100px;
     border-radius: 5em;
 }
+
 
 @media only screen and (max-width: 600px) {
 
     .imagemHeader {
         margin-left: 1em;
-        width: 27%;
+        width: 24%;
         border-radius: 10em;
     }
     
+}
+
+
+@media only screen and (max-width: 641px) {
+
+    .imagemHeader {
+        width: 150px;
+        border-radius: 5em;
+    }
+
 }
