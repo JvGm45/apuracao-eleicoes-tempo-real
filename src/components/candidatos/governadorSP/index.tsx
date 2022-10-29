@@ -25,7 +25,7 @@ function CandidatosSP() {
 
 
     function candidatosSP() {
-        axios.get(`https://resultados.tse.jus.br/oficial/ele2022/546/dados-simplificados/sp/sp-c0003-e000546-r.json`).then((response) => {
+        axios.get(`https://resultados.tse.jus.br/oficial/ele2022/547/dados-simplificados/sp/sp-c0003-e000547-r.json`).then((response) => {
         
             //Urnas apuradas
             setPostSP(response.data.pst);

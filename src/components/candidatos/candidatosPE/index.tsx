@@ -25,7 +25,7 @@ function GovernadorPE() {
 
 
     function candidatos() {
-        axios.get(`https://resultados.tse.jus.br/oficial/ele2022/546/dados-simplificados/pe/pe-c0003-e000546-r.json`).then((response) => {
+        axios.get(`https://resultados.tse.jus.br/oficial/ele2022/547/dados-simplificados/pe/pe-c0003-e000546-r.json`).then((response) => {
         
             //Urnas apuradas
             setPost(response.data.pst);
